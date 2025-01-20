@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .emailInputWrapper {
+            background-color: #F4F4F4;
+            width: 407px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 9px 20px;
+            border-radius: 8px;
+        }
+
+        .rightSideContentWrapper {
+            background-color: rgb(128, 82, 22);
+            max-width: 525px;
+            width: 100%;
+            padding: 30px 59px;
+        }
+
+        .emailInput {
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+        }
+
+        .emailInput::placeholder {
+            color: #B7B7B7;
+        }
+    </style>
 
 </head>
 <body>
@@ -13,7 +43,17 @@
             hello
         </div>
         <div class="rightSide">
-            world
+           <div class="rightSideContentWrapper">
+                <div class="inputsWrapper">
+                    <div class="emailInputWrapper">
+                        <input type="email" class="emailInput" placeholder="Email">
+                        <img src="icons/eye-icon.svg" alt="eye-icon">
+                    </div>
+                    <div class="passwordInputWrapper">
+
+                    </div>
+                </div>
+           </div>
         </div>
     </div>
 </body>
